@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý nhân viên</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../employee.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>👩‍💼 Quản lý nhân viên</h1>
+    <a href="./homePage.html">← Quay lại trang chủ</a>
+  </header>
+
+  <section class="form-section">
+    <input type="text" id="name" placeholder="Tên nhân viên">
+    <input type="text" id="role" placeholder="Chức vụ">
+    <input type="number" id="salary" placeholder="Lương">
+    <button id="addBtn">Thêm nhân viên</button>
+  </section>
+
+  <table border="1" id="employeeTable">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Tên nhân viên</th>
+        <th>Chức vụ</th>
+        <th>Lương</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody id="employeeList"></tbody>
+  </table>
+</body>
+</html>
